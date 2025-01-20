@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleksandr Kozachenko - Photographer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f5f5f5;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+        ще сократи ро    margin: 10px 0 20px;
+            font-size: 1.2em;
+        }
+        nav {
+            text-align: center;
+            background: #ffffff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .instagram-frame {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            overflow: hidden;
+        }
+        .youtube-carousel {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .youtube-carousel iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 5px;
+        }
+        .contact {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        @media (min-width: 768px) {
+            .youtube-carousel {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Oleksandr Kozachenko</h1>
+        <p>Photographer and Videographer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Photos</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>With experience working for UNOPS, LINK Magazine, USAID, Forbes Ukraine, the American Red Cross, and WHO, I specialize in business portraits, events, and creative photography. My passion is creating visual stories that inspire and connect with audiences.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Photos</h2>
+        <iframe class="instagram-frame" src="https://www.instagram.com/al_kozachenko/embed/" style="height: 600px;" allowfullscreen></iframe>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <div class="youtube-carousel">
+            <iframe src="https://www.youtube.com/embed/DOYQhrAH3So" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL8v2OSO8e57hc3cyefuXwz5HQINLNanOg" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL8v2OSO8e57j5G_yoVf_23Fj7gQ2JwJ09" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL8v2OSO8e57g4NpO9FOhn6kqV3RVPcWY-" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL8v2OSO8e57gCJQWsbk3935ZoyAy92elq" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL8v2OSO8e57gcefi2H4h1X9b7zo2W8iFA" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PL8v2OSO8e57gQ4fNp3V60tPfOtgcZAYxo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>Location: Edmonton, Canada</p>
+            <p>Phone: +1 (825) 823-4453</p>
+            <p>Email: <a href="mailto:akozachenko5@gmail.com">akozachenko5@gmail.com</a></p>
+        </div>
+    </section>
+</body>
+</html>
